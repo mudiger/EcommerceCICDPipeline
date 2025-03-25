@@ -1,19 +1,12 @@
-'use client';
+import { Suspense } from 'react';
+import SearchClient from './SearchClient';
 
-import { useSearchParams } from 'next/navigation';
+export const dynamic = 'force-dynamic'; // This works now because it's a Server Component
 
 export default function SearchPage() {
-  const searchParams = useSearchParams();
-  const query = searchParams.get('query');
-
   return (
-    <div className="p-6">
-      <h1 className="text-2xl font-bold mb-4">
-        Search Results for: <span className="text-blue-600">{query}</span>
-      </h1>
-      {/* You can add filtered product cards here */}
-    </div>
+    <Suspense fallback={<div>Loading...</div>}>
+      <SearchClient />
+    </Suspense>
   );
 }
-
-export const dynamic = 'force-dynamic';
