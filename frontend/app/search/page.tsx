@@ -1,4 +1,3 @@
-// app/search/page.tsx
 'use client';
 
 import { useSearchParams } from 'next/navigation';
@@ -16,3 +15,5 @@ export default function SearchPage() {
     </div>
   );
 }
+
+export const dynamic = 'force-dynamic';
