@@ -1,4 +1,4 @@
-# Ecommerce CI/CD Pipeline (https://ecommerce-cicd-pipeline.vercel.app/)
+## Ecommerce CI/CD Pipeline (https://ecommerce-cicd-pipeline.vercel.app/)
 Ecommerce CI/CD Pipeline is a modern e-commerce frontend built with Next.js and TypeScript, showcasing a clean architecture and end-to-end automation through CI/CD. It features an interactive product browsing experience and deploys seamlessly using Vercel, making it a great base for scalable e-commerce solutions.
 
 ## Deployment Strategy
@@ -16,7 +16,6 @@ However, due to AWS hosting costs, the deployment has been migrated to **Vercel*
 - Route-based navigation with search functionality
 - Integrated CI/CD pipeline for streamlined deployment
 - Docker support and GitHub Actions workflow for automation
-- Fully deployed via Vercel for preview and production environments
 
 ## Installation
 1. Clone the repository: git clone https://github.com/mudiger/EcommerceCICDPipeline.git
